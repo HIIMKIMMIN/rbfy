@@ -1,0 +1,596 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap');
+
+.rbfy_visual img{
+    width: 100%;
+    height: 100vh;
+}
+.rbfy_visual .swiper-scrollbar{
+    left: 50%; bottom: 5%;
+    transform: translateX(-50%);
+    width: 30%;
+    height: 4px;
+    overflow: hidden;
+    border-radius: 0; 
+    background-color: #cfcfcf86;
+}
+.rbfy_visual .swiper-scrollbar-drag{
+    background-color: #fff;
+    border-radius: 0;
+    width: 19.5% !important;
+}
+.swiper-slide .main_title .btn_more {
+    display: inline-block;
+    width: 200px; height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.6);
+    margin-top: 50px;
+    transition: all 0.3s;
+}
+.swiper-slide .main_title .btn_more:hover {
+    background: #fff;
+    color: rgba(0,0,0,0.7);
+}
+/* section_title영역 */
+.main_title {
+    position: absolute;
+    top: 50%; left: 15%;
+    transform: translateY(-50%);
+    color: #fff;
+}
+.main_title .s_text {
+    font-size: 22px;
+    font-weight: 500;
+    opacity: 0.6;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+.main_title .b_text {
+    margin-bottom: 15px;
+    font-size: 44px;
+    font-weight: 500;
+}
+
+/* swiper */
+
+
+.skip_event{
+    position: fixed;
+    top: 0; left: 0;
+    background-color: #fff;
+    width: 100%; height: 32px;
+    line-height: 32px;
+    text-align: center;
+    z-index: 100;
+    display: block;
+}
+.skip_event button{
+    position: absolute;
+    top: 50%; right: 30px;
+    transform: translateY(-50%);
+    width: 26px; height: 26px;
+    background: none;
+    border: none;
+    font-size: 22px;
+    opacity: 70%;
+    cursor: pointer;
+}
+/* skip_area */
+
+header{
+    width: 100%; height: 70px;
+    position: fixed;
+    top: 32px; left: 0;
+    z-index: 50;
+    color: var(--color-dark-gray);
+}
+header.fixed-header{
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: 1s fixed-header;
+}
+@keyframes fixed-header{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.header_area{
+    position: relative;
+    width: 100%; height: 100%;
+}
+.header_area a{
+    display: block;
+}
+.header_area a h2{
+    position: absolute;
+    top: 50%; left: 100px;
+    transform: translateY(-50%);
+    width: auto;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Wittgenstein", serif;
+}
+.header_area .menu{
+    position: absolute;
+    top: 50%; left: 50px;
+    transform: translateY(-50%);
+    width: auto; height: 20px;
+}
+.header_area .menu img{
+    width: 100%; height: 100%;
+}
+.header_area .logo{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto; height: 40px;
+}
+.header_area .logo img{
+    width: 100%;
+    height: 100%;
+}
+.header_area .icon_area {
+    position: absolute;
+    top: 50%; right: 50px;
+    transform: translateY(-50%);
+    width: 8%; height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.header_area .icon_area figure{
+    width: auto;
+    height: 20px;
+}
+.header_area .icon_area figure img{
+    width: 100%;
+    height: 100%;
+}
+header>.header_area.active{
+    display: none;
+}
+/* header */
+
+.sub_menu{
+    display: none;
+    width: 100%;
+    background-color: rgb(255, 250, 244);
+    padding: 120px 50px;
+    box-sizing: border-box;
+}
+.gnb{
+    display: flex;
+    justify-content: space-between;
+}
+.left_side{
+    width: 35%;
+}
+.left_side ul{
+    display: flex;
+    justify-content: space-between; 
+}
+.left_side ul li span{
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Wittgenstein", serif;
+    margin-bottom: 20px;
+}
+.left_side ul li a{
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.right_side{
+    width: 38%;
+}
+.right_side ul{
+    display: flex;
+    justify-content: space-between; 
+}
+.right_side ul li{
+    width: 32%;
+}
+.right_side ul li figure{
+    width: 100%;
+}
+.right_side ul li figure img{
+    width: 100%;
+}
+.right_side>p{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Wittgenstein", serif;
+}
+.right_side ul li p{
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+#sc_life .sc_title{
+    width: 100%;
+    height: 400px;
+    padding: 100px 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+#sc_life .title{
+    font-size: 40px;
+    font-weight: 500;
+    font-family: "Wittgenstein", serif;
+}
+#sc_life .text{
+    font-size: 18px;
+}
+#sc_life .btn_view{
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+}
+#sc_life .btn_view::after{
+    content: '';
+    position: absolute;
+    bottom: -2px; left: 0;
+    background: #000;
+    width: 0; height: 1px;
+}
+#sc_life .btn_view:hover::after{
+    width: 100%;
+    transition: all 0.3s;
+}
+.sc_video iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* sc_video */
+
+section{
+    text-align: center;
+}
+section h2{
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Wittgenstein", serif;
+    margin-bottom: 50px;
+}
+section > ul{
+    display: flex;
+    justify-content: space-between;
+    width: 550px;
+    margin: 0 auto 50px;
+}
+section > ul > li a{
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+}
+section > ul > li a.active{
+    color: rgba(0, 0, 0, 0.9);
+    border-bottom: 1px solid #000;
+}
+section .text{
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 50px;
+}
+section>div{
+    width: 100%;
+}
+#product{
+    padding-top: 100px;
+}
+#product p{
+    margin-bottom: 50px;
+}
+.product_wrap > ul{
+    display: flex;
+    justify-content: space-between;
+}
+.product_wrap > ul li{
+    width: 32%;
+}
+.text_area{
+    margin-top: 50px;
+}
+.text_area .p_title{
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.text_area .p_desc{
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.6);
+}
+.text_area .price{
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.text_area .price del{
+    margin-bottom: 10px;
+    color: rgba(90, 64, 46, 0.6);
+}
+.text_area .price ins{
+    color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+}
+.text_area .rate_star .star{
+    vertical-align: middle;
+}
+.text_area .rate_sta .count_num{
+    color: rgba(0, 0, 0, 0.6);
+}
+/* product */
+
+
+
+.sc_visual .sc_visual_bg{
+    margin: 100px 0;
+    width: 100%;
+    height: auto;
+}
+.sc_visual .sc_visual_bg img{
+    width: 100%;
+    height: auto;
+}
+ /* sc_visual*/
+
+
+
+.review_wrap > ul{
+    display: flex;
+    justify-content: space-between;
+}
+ .review_wrap > ul li{
+    width: 24%
+}
+section>div > ul li a > figure{
+    width: 100%;
+    height: auto;
+}
+section>div ul li a figure img{
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+#review h2{
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Wittgenstein", serif;
+    margin-bottom: 30px;
+}
+/* review */
+
+.insta_adress{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 0;
+}
+.insta_adress p{
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "Wittgenstein", serif;
+}
+.insta_adress img{
+    width: auto;
+    height: 25px;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+/* .insta_adress */
+
+
+
+.rbfy_visual2 {
+    margin-top: 30px;
+}
+.rbfy_visual2 .swiper-slide{
+   flex-shrink: inherit;
+
+}
+.rbfy_visual2 .swiper-slide img {
+    width: auto;
+    height: 500px;
+}
+
+/* .rbfy_visual2 */
+
+
+.footer{
+    margin-top: 100px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 50px 100px;
+}
+.footer .ft_util{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.footer .ft_util .logo{
+    width: 6%;
+    height: auto;
+    opacity: 50%;
+}
+.footer .ft_util .logo img{
+    width: 100%;
+}
+.footer .ft_util .sns_area{
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 22%;
+}
+.footer .ft_util .sns_area img{
+    width: 30px;
+    height: auto;
+}
+
+
+.footer .info_wrap > ul{
+    display: flex;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.5);
+}
+.footer .info_wrap ul li{
+    width: 23%;
+}
+.footer .info_wrap ul li h4{
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    font-weight: 300;
+}
+
+.footer .info_wrap ul li strong{
+    display: block;
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+}
+.footer .info_wrap ul li .info_text p{
+    line-height: 1.6;
+}
+.capy{
+    width: 50%;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 50px;
+}
+.capy p{
+    font-size: 14px;
+    font-weight: 300;
+    position: relative;
+    display: inline-block;
+    padding: 5px;
+}
+.capy p::after{
+    content: '';
+    position: absolute;
+    right: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.capy span{
+    display: block;
+    margin-top: 20px;
+}
+
+
+
+.family_site > a{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    padding-right: 50px;
+    border-radius: 3px 3px 0 0;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+.family_site > span{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    border-radius: 0 0 3px 3px ;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    opacity: 0;
+}
+.family_site a.on{
+    background: #fff;
+}
+
+
+
+
+
+
+
+
+.sub_header_area a h2{
+    position: absolute;
+    top: 50%; left: 100px;
+    transform: translateY(-50%);
+    width: auto;
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Wittgenstein", serif;
+}
+.sub_header_area .menu{
+    position: absolute;
+    top: 50%; left: 50px;
+    transform: translateY(-50%);
+    width: auto; height: 20px;
+}
+.sub_header_area .menu img{
+    width: 100%; height: 100%;
+}
+.sub_header_area .logo{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto; height: 40px;
+}
+.sub_header_area .logo img{
+    width: 100%;
+    height: 100%;
+}
+.sub_header_area .icon_area {
+    position: absolute;
+    top: 50%; right: 50px;
+    transform: translateY(-50%);
+    width: 8%; height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.sub_header_area .icon_area figure{
+    width: auto;
+    height: 20px;
+}
+.sub_header_area .icon_area figure img{
+    width: 100%;
+    height: 100%;
+}
+.sub_menu .menu.active{
+    display: block;
+    transition: all 0.5s;
+    transform-origin: right center;
+    transform: rotate(90deg);
+}
+
+
+
+
+
+
+
+
+
+.product02{
+    display: none;
+}
+.product01{
+    display: none;
+}
